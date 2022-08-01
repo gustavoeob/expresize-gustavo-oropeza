@@ -4,10 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css'
 import logo from "../../assets/logo/logo.png"
+import CartWidget from "../../components/cart/CartWidget"
 
 function NavBar() {
   return (
-    <Navbar className="navbar-container" expand="lg">
+    <Navbar className="navbar-container" fixed="top" expand="lg">
       <Container>
         <Navbar.Brand href="#home"><img id='navbar-logo' alt="text logo" src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,6 +28,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <CartWidget />
         </Navbar.Collapse>
       </Container>
     </Navbar>

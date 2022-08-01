@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Albert Sans', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -37,8 +42,3 @@
   }
 }
 
-.main-container {
-  display: flex;
-  justify-content: center;
-  margin-top:40vh ;
-}

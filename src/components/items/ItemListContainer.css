@@ -1,0 +1,11 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 45vh; */
+    margin-top: 80px;   
+    position: static !important;        
+  }
+  .tem-list-container-text{
+    font-size: 200em
+  }

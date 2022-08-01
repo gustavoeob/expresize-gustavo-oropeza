@@ -1,12 +1,13 @@
 import './App.css';
 import NavBar from './components/navbar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/items/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="main-container">Something goes here!</div>
+      <ItemListContainer />
     </div>
     
   );

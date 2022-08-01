@@ -7,8 +7,15 @@
 }
 
 .navbar-container{
+    position: fixed !important;
+    padding-top: 0 !important;
     background-color: var(--main-color) !important;
     height: 5rem;
+}
+.container{
+    min-width: 100%;
+    padding: 2.5px auto !important;
+    background-color: var(--main-color) !important;
 }
 a.nav-link, #basic-nav-dropdown {
     color: var(--plain);
@@ -30,12 +37,24 @@ a.dropdown-item{
 a.dropdown-item:hover{
     background-color: var(#063970) !important;
 }
+.navbar-brand{
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
 #navbar-logo {
+    margin: 1.2rem 2rem;
+    padding: 0 !important;
     transition: all .2s ease;
-    width: 10rem
+    width: 10rem;
+    height: 3.15rem;
 }
 #navbar-logo:hover{
     transition: all .3s ease;
-    width: 11.5rem
+    width: 11.5rem;
+    height: 3.51rem;
 }
 
+.navbar-toggler{
+    border: none !important;
+    margin: 1rem 1.5rem !important;
+}
