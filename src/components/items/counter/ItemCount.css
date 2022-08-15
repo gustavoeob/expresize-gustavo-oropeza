@@ -1,0 +1,64 @@
+.itemActionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 15rem;
+    height: 20rem;
+    border: 1px solid #f4b17e;
+    border-radius: .5rem;
+    transition: ease all .25s;
+}
+.itemActionContainer:hover{
+    border: 1px solid rgb(242, 163, 102, 2);
+    box-shadow: 1px 1px rgb(242, 163, 102);
+    transition: ease all .25s;
+}
+
+.counterContainer{
+    margin: .2rem auto;
+    margin-top: 0;
+}
+.decrement, .increment{
+    font-weight: 500;
+    background: none;
+    color: #db5f00;
+    border: none;
+    width: 2.5rem;
+    height: 1.9rem;
+    border: 1px solid #f28939;
+    border-radius: .5rem;
+
+}
+.counter{
+    font-weight: 500;
+    color: #db5f00;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    
+}
+
+.addToCart{
+    background: none;
+    color: #db5f00;
+    font-weight: 500;
+    border-radius: .5rem;
+    width: 80%;
+    border: 1px solid #f0a164;
+    margin: 1em auto;
+    padding: .5rem 1rem
+}
+ .addToCart:hover, .increment:hover, .decrement:hover{
+    background: #eb883b;
+    color:rgb(255, 255, 255)
+ }
+
+ .showStock{
+    text-align: start;
+    margin-left: 1.8rem;
+    margin-bottom: 0.6rem;
+    font-size: .9rem;
+    opacity: .4;
+ }
+.abc{
+    justify-content:flex-start;
+}
