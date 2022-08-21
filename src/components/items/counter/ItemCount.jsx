@@ -20,16 +20,16 @@ const increment = () => {
     <>
         <div className="itemActionContainer">
             <div>
-                <p className="abc">Title and image go here</p>
-                <p className="showStock">Stock Available: {stock}</p>
+                {/* <p className="abc">Title and image go here</p> */}
+                {/* <p className="showStock">Stock Available: {stock}</p> */}
             </div>
             <div className="counterContainer">
-                <button className="decrement" onClick={decrement}>-</button>
+                <button className="decrement" disabled={counter === 0} onClick={decrement}>-</button>
                 <span className="counter">{counter}</span>
                 <button className="increment" onClick={increment}>+</button>
             </div>
             <div className="addToCartContainer">
-                <button className="addToCart">Add to Cart</button>
+                <button className="addToCart" disabled={counter === 0} >Add to Cart</button>
             </div>
         </div>
     </>

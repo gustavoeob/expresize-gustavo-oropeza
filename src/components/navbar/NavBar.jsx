@@ -14,9 +14,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-white">
-            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#our-mission">Our Mission</Nav.Link>
-            <Nav.Link href="#for-business">For Business</Nav.Link>
             <NavDropdown title="Courses" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Spanish</NavDropdown.Item>
@@ -27,6 +25,8 @@ function NavBar() {
                 Pricing
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="#for-business">For Business</Nav.Link>
+            <Nav.Link href="#blog">Blog</Nav.Link>
           </Nav>
           <CartWidget />
         </Navbar.Collapse>

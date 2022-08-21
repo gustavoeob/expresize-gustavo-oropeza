@@ -8,7 +8,7 @@ const CartWidget = () => {
     <div className="cart-widget">
         <p className="item-counter ">5</p>
         <a href="#">
-            <img alt="cart" src={cartWidget} />
+            <img className="cart-icon" alt="cart" src={cartWidget} />
         </a>
     </div>
     </>

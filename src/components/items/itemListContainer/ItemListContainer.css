@@ -1,8 +1,17 @@
 .main-container {
     display: flex;
     justify-content: center;
-    margin-top: 35vh;
+    /* margin-top: 12rem; */
+    flex-direction: column;
+    margin: 0 20vh;
   }
-  .item-list-container-text{
-    font-size: 1.6em
-  }
+
+.courses-title{
+  color: #db5f00;
+  font-weight: 500;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  /* margin: -4rem 0 2rem 5rem; */
+  margin: 2.5rem auto;
+}
