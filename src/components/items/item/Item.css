@@ -36,9 +36,6 @@
     width:50px;
     border-radius: 50%;
 }
-.spacer{
-  width: -webkit-fill-available;
-}
 
 .card-name-container{
   display: flex;
