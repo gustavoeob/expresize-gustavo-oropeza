@@ -3,6 +3,14 @@
     height: 350px;
     padding: 1rem;
     margin: 2rem;
+    transition: all ease 0.25s;
+}
+.card-item-container:hover{
+    transition: all ease 0.25s;
+    filter: brightness(1.1);
+    transform: scale(1.05);
+
+    
 }
 .card-item-img{
     filter: brightness(0.8);
@@ -17,14 +25,25 @@
 }
 
 .card-flag-container{
+    min-width: 150px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end
 }
 
 .flag-icon{
     width:50px;
     border-radius: 50%;
+}
+.spacer{
+  width: -webkit-fill-available;
+}
+
+.card-name-container{
+  display: flex;
+  justify-content: center;
+
 }
 .card-info-container{
     height: 200px;

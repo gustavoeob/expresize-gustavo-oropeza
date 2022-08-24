@@ -15,7 +15,10 @@ return (
         </div>
         <div className="card-flag-container">
           <img className="flag-icon" src={flagIcon} alt="" />
-          <p className="card-item name">{name}</p>
+          <div className="spacer"></div>
+          <div className="card-name-container">
+            <p className="card-item name">{name}</p>
+          </div>
         </div>
         <div className="card-info-container">
           <p className="card-item price">Starts at ${price}</p>

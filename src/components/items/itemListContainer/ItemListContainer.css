@@ -1,9 +1,13 @@
+html{
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/white_wall_hash.png');
+}
+
 .main-container {
     display: flex;
     justify-content: center;
-    /* margin-top: 12rem; */
-    flex-direction: column;
+     flex-direction: column;
     margin: 0 20vh;
+
   }
 
 .courses-title{
