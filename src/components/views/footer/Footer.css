@@ -13,8 +13,8 @@
     margin-top: 5vh;
 }
 .subscribe-container{
-    margin: 2rem;
-    margin: 1.5vh auto;
+    margin: 1.8vh auto 2.4vh auto;
+    padding: 0 30px;
 }
 .footer-sign{
     padding: 20px 30px;
@@ -27,6 +27,7 @@
     font-size: 1.5rem;
     color: #fff;
     font-weight: 500;
+    margin: 0 0 8px 0;
 }
 .subscribe-input[placeholder="example@email.com"]{
     width: 17rem;
@@ -34,4 +35,7 @@
     border: none;
     border-radius: 5px;
     padding: 2px 5px;
+}
+.sign-heart{
+    font-size: .6rem;
 }

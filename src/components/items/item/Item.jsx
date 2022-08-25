@@ -22,7 +22,7 @@ return (
         <div className="card-info-container">
           <p className="card-item price">Starts at ${price}</p>
           <p className="card-item text">24/7 for you</p>
-          <button className="more-info-btn"><span>Find a tutor</span></button>
+          <button className="more-info-btn"><span>Find out more</span></button>
         </div>
       </div>
     </>
