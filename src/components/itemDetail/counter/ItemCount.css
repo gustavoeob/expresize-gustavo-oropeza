@@ -3,21 +3,11 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 15rem;
-    height: 20rem;
-    border: 1px solid #f4b17e;
+    height: 17rem;
     border-radius: .5rem;
     transition: ease all .25s;
 }
-.itemActionContainer:hover{
-    border: 1px solid rgb(242, 163, 102, 2);
-    box-shadow: 1px 1px rgb(242, 163, 102);
-    transition: ease all .25s;
-}
 
-.counterContainer{
-    margin: .2rem auto;
-    margin-top: 0;
-}
 .decrement, .increment{
     font-weight: 500;
     background: none;

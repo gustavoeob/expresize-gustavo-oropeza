@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import "./ItemListContainer.css"
 import ItemList from "../itemList/ItemList"
-import Loading from "../loading/Loading"
+import Loading from "../../views/loading/Loading"
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])
@@ -16,7 +16,6 @@ const ItemListContainer = () => {
       price: 7.99,
       salePrice: 4.99,
       stock: 19,
-
       isLive: true
     },
     {

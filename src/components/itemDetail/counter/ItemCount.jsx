@@ -20,8 +20,7 @@ const increment = () => {
     <>
         <div className="itemActionContainer">
             <div>
-                {/* <p className="abc">Title and image go here</p> */}
-                {/* <p className="showStock">Stock Available: {stock}</p> */}
+                <p className="showStock">Stock Available: {stock}</p>
             </div>
             <div className="counterContainer">
                 <button className="decrement" disabled={counter === 0} onClick={decrement}>-</button>

@@ -60,9 +60,10 @@
     text-shadow:.2px .2px 18px #fff;
 }
 
-.more-info-btn{
+.more-info-btn > *{
     border: none;
-    background-color: #db5f00;
+    border-radius: 5px;
+    background-color: #ff6f00f8;
     color: #fff;
     font-weight: 500;
 }
@@ -81,9 +82,11 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 0 auto;
+    text-decoration: none;
   }
   
-  .more-info-btn span {
+  .more-info-btn span  {
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -101,6 +104,7 @@
   
   .more-info-btn:hover span {
     padding-right: 25px;
+    color: #fff;
   }
   
   .more-info-btn:hover span:after {
@@ -108,6 +112,6 @@
     right: 0;
   }
 
-  .more-info-btn:active{
+  .more-info-btn:active, .find-out-more-span:active{
     background-color: #565656
   }

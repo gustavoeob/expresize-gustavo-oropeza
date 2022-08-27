@@ -3,14 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css'
-import logo from "../../assets/logo/logo.png"
+import logo from "../assets/logo/logo.png"
+import HelpIcon from "../assets/icons/help-icon.png"
 import CartWidget from "../../components/cart/CartWidget"
+import {Link} from "react-router-dom"
+
 
 function NavBar() {
   return (
     <Navbar className="navbar-container" fixed="top" expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><img id='navbar-logo' alt="text logo" src={logo} /></Navbar.Brand>
+        <Link to="/">
+        <Navbar.Brand href="/"><img id='navbar-logo' alt="text logo" src={logo} /></Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-white">
@@ -28,7 +33,8 @@ function NavBar() {
             <Nav.Link href="#for-business">For Business</Nav.Link>
             <Nav.Link href="#blog">Blog</Nav.Link>
           </Nav>
-          <CartWidget />
+          <CartWidget className="cart-widget"/>
+          <Link to="/"><img className="help-icon" src={HelpIcon} alt="help icon" /></Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
