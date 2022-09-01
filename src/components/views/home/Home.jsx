@@ -1,6 +1,6 @@
 import React from 'react'
 import Landing from '../landing/Landing'
-import ItemListContainer from '../../itemView/itemListContainer/ItemListContainer'
+import ItemListContainer from '../../pages/itemView/itemListContainer/ItemListContainer'
 
 const Home = () => {
   return (

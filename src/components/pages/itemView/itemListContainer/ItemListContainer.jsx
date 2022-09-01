@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import "./ItemListContainer.css"
 import ItemList from "../itemList/ItemList"
-import Loading from "../../views/loading/Loading"
+import Loading from "../../../views/loading/Loading"
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])

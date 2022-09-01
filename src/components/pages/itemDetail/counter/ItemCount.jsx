@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import './ItemCount.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 const ItemCount = ({stock, initial, onAdd}) => {
 
@@ -20,7 +22,7 @@ const increment = () => {
     <>
         <div className="itemActionContainer">
             <div>
-                <p className="showStock">Stock Available: {stock}</p>
+                <p className="showStock">Rooms Available: {stock} {<FontAwesomeIcon className="users-icon-counter" icon={faUsers} />}</p>
             </div>
             <div className="counterContainer">
                 <button className="decrement" disabled={counter === 0} onClick={decrement}>-</button>

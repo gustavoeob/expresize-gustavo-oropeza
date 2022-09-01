@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 15rem;
-    height: 17rem;
+    max-height: 17rem;
     border-radius: .5rem;
     transition: ease all .25s;
+    margin: 50px auto;
 }
 
 .decrement, .increment{
@@ -28,8 +29,8 @@
 }
 
 .addToCart{
-    background: none;
-    color: #db5f00;
+    background: #db5f00;
+    color: rgb(238, 238, 238);
     font-weight: 500;
     border-radius: .5rem;
     width: 80%;
@@ -48,7 +49,12 @@
     margin-bottom: 0.6rem;
     font-size: .9rem;
     opacity: .4;
+    display: flex;
+    gap: .5rem
  }
 .abc{
     justify-content:flex-start;
+}
+.users-icon-counter{
+    color: rgb(135, 132, 132)
 }

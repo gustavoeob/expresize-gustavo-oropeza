@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../navbar/NavBar'
+import Navbar from '../views/navbar/NavBar'
 import Home from '../views/home/Home'
-import ItemDetailContainer from '../itemDetail/itemDetailContainer/ItemDetailContainer'
+import ItemDetailContainer from '../pages/itemDetail/itemDetailContainer/ItemDetailContainer'
 import Footer from '../views/footer/Footer'
 import {BrowserRouter, Route, Routes as Routing} from 'react-router-dom'
 
