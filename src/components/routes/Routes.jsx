@@ -19,6 +19,7 @@ const Routes = () => {
                     <Routing>
                         <Route path="/" element={<Home />} />
                         <Route path='/course/:id' element={<ItemDetailContainer/>}/>
+                        {/* <Route path='/checkout/cart' element={} />  */}
                     </Routing>
 
                     <Footer/>

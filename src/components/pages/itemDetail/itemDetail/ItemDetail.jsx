@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ItemDetail.css'
 import ItemCount from '../counter/ItemCount'
 import { Link } from 'react-router-dom'
@@ -7,9 +7,20 @@ import { faVideo } from '@fortawesome/free-solid-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faHandshakeAngle } from '@fortawesome/free-solid-svg-icons'
 
-// This function displays an the single selected item detail
 
+// This function displays an the single selected item detail
 const ItemDetail = ({item}) => {
+
+// For further use
+  // const {id, price, title, img, flagIcon} = item;
+
+  const [counter, setCounter] = useState(0)
+  
+  const onAdd = (counter) =>{
+    
+    setCounter(counter)
+    console.log(`You have ${counter} ${item.name} course(s) added`)
+  }
   return (
     <>
   <div className="item-detail-container">
@@ -53,7 +64,15 @@ const ItemDetail = ({item}) => {
                 </div>
               </div>
               <div className="right-bottom-detail-container">
-                <ItemCount stock={item.stock} initial={1}/>
+                {counter !== 0 ? 
+                <div className="item-detail-checkout-container">
+                  <span className="added-to-cart-message">Added to cart successfully! 🎉</span>
+                  <Link to="/cart">
+                  <button onClick={()=>onAdd(counter)} className="item-detail-button-checkout">Checkout</button>
+                  </Link> 
+                </div> :
+                <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
+                }
               </div>
           </div>
       </div>

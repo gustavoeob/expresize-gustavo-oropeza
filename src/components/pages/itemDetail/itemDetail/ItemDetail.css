@@ -163,6 +163,7 @@
     width: 100%;
 }
 .item-detail-price{
+    color: #808080;
     font-weight: 500;
 }
 .item-detail-description{
@@ -172,8 +173,27 @@
     text-size-adjust: 80%;
 }
 .item-detail-description-includes{
-    color: #0B1E2D;
+    color: #808080;
 }
 .detail-live-icon{
     margin: 1rem auto;
+}
+.item-detail-checkout-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em auto 0;
+}
+.added-to-cart-message{
+    margin: 1rem auto;
+}
+
+.item-detail-button-checkout{
+    background: #db5f00;
+    color: rgb(238, 238, 238);
+    font-weight: 500;
+    border-radius: .5rem;
+    width: 100%;
+    border: 1px solid #f0a164;
+    padding: .5rem 1rem
 }

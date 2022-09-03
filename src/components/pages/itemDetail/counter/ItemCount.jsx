@@ -30,7 +30,7 @@ const increment = () => {
                 <button className="increment" onClick={increment}>+</button>
             </div>
             <div className="addToCartContainer">
-                <button className="addToCart" disabled={counter === 0} >Add to Cart</button>
+                <button className="addToCart" disabled={counter === 0} onClick={()=>onAdd(counter)} >Add to Cart</button>
             </div>
         </div>
     </>
