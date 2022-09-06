@@ -47,7 +47,7 @@
 }
 .flag-icon-detail-container{
     width:100vw;
-    height:50%;
+    height:50px;
     display: flex;
     justify-content: flex-end;
 }
@@ -182,10 +182,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4em auto 0;
+    margin: 4em auto;
 }
-.added-to-cart-message{
+.added-to-cart-message {
+    font-weight: 500;
+    color: #808080;
+    display: block;
+    -webkit-animation: fadeIn .6s;
+    animation: fadeIn .6s;
     margin: 1rem auto;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .item-detail-button-checkout{

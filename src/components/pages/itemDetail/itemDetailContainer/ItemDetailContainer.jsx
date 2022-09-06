@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     
     // Store the find operation to match the object element with id in a variable to use it in line 105
-    const selectedCourse = products.find((el) => el.id == id)
+    const selectedCourse = products.find((e) => e.id == id)
     setItem(selectedCourse)
     new Promise((resolve) => {
       // This Promise is running with setTimeout() this code will be skipped to the next task to execute 
@@ -43,3 +43,10 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+
+
+
+
+ 

@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css'
 import logo from "../../assets/logo/logo.png"
 import HelpIcon from "../../assets/icons/help-icon.png"
-import CartWidget from "../../cart/CartWidget"
+import CartWidget from "../../cart/cartWidget/CartWidget"
 import {Link} from "react-router-dom"
 
 

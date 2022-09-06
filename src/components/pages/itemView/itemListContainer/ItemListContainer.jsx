@@ -4,8 +4,9 @@ import ItemList from "../itemList/ItemList"
 import Loading from "../../../views/loading/Loading"
 
 const ItemListContainer = () => {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]);
   
+/* A promise that is resolving after 2 seconds. */
   useEffect(() => {
     
     let products = [{
@@ -70,11 +71,15 @@ const ItemListContainer = () => {
       }, 2000)
       
     }).then((data)=> {
+/* Setting the state of the items array to the data that is returned from the promise. */
       setItems(data);
+/* The `finally` method returns a Promise. It will be invoked regardless of whether the promise is
+fulfilled or rejected. */
     }).catch().finally(() => {setLoading(false)})
     
   },[])
   
+/* Setting the loading state to true and if it is true, it will return the loading component. */
   const [loading, setLoading] = useState(true);
   if (loading){
     return <Loading />

@@ -12,6 +12,7 @@
 }
 
 .subscribe-container{
+    -webkit-appearance: none;
     width:100%;
     margin: 1.8vh auto 2.4vh auto;
     padding: 0 30px;
@@ -51,7 +52,7 @@
     color: #f2f2f2;
     font-size: .9rem;
     border: none;
-    height: fit-content;
+    /* height: fit-content; */
     width:50px;
     padding: 2px;
     border-radius: 0 5px 5px 0;
@@ -80,12 +81,13 @@
 	 background-color: rgba(0, 181, 245, 0.05);
 }
  .social-icons {
+    width: 100%;
     display: flex;
     gap: 3.5rem;
-    justify-content: center;
-	 padding: 20px 60px 50px 0;
-	 list-style: none;
-	 margin: 1em;
+    justify-content: space-evenly;
+	padding: 20px 60px 50px 0;
+	list-style: none;
+	margin: 0 auto;
 }
  .social-icons li {
 	 margin: 0.15em;
