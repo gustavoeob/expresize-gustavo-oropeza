@@ -50,10 +50,8 @@
     padding: 8px;
     width: 140px;
     transition: all 0.5s;
-    cursor: pointer;
     margin: 2rem auto;
     text-decoration: none;
-    
 }
 .go-home-link{
     color: #fff;

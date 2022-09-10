@@ -13,7 +13,7 @@ const NotFound = () => {
             </div>
             <div className="not-found-english-message-container">
                 <p className="not-found-message">Now you learned how to say <span className="not-found-span">not found </span>in Chinese</p>
-                <p className="not-found-message">And that's because you may have typed a wrong URL or the page doesn't exist anymore</p>
+                <p className="not-found-message">And that's because you may have typed a wrong URL, the page doesn't exist anymore or it hasn't been created yet</p>
                 <button className="go-home-btn"> <Link  to="/" className="go-home-link">Go home</Link> </button>
             </div>
         </div>

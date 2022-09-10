@@ -6,6 +6,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 const ItemCount = ({stock, initial, onAdd}) => {
 
 const [counter, setCounter] = useState(initial)
+const [count, setCount] = useState(counter)
 
 const decrement = () => {
     if (counter > 0){
@@ -30,7 +31,7 @@ const increment = () => {
                 <button className="increment" onClick={increment}>+</button>
             </div>
             <div className="addToCartContainer">
-                <button className="addToCart" disabled={counter === 0} onClick={()=>onAdd(counter)} >Add to Cart</button>
+                <button onClick={() => onAdd(counter)} className="addToCart" disabled={counter === 0} >Add to Cart</button>
             </div>
         </div>
     </>

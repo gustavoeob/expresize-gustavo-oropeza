@@ -33,8 +33,10 @@ function NavBar() {
             <Nav.Link href="#for-business">For Business</Nav.Link>
             <Nav.Link href="#blog">Blog</Nav.Link>
           </Nav>
-          <CartWidget className="cart-widget"/>
-          <Link to="/"><img className="help-icon" src={HelpIcon} alt="help icon" /></Link>
+          <div className="navbar-left-icons">
+            <CartWidget className="cart-widget"/>
+            <Link to="/"><img className="help-icon" src={HelpIcon} alt="help icon" /></Link>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

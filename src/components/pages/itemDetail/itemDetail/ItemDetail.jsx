@@ -13,14 +13,14 @@ const ItemDetail = ({item}) => {
   const {addItem} = useContext(CartContext);
   const [counter, setCounter] = useState(0);
 
+
 /**
- * The function takes in a count and sets the counter to that count. It then logs a message to the
- * console and calls the addItem function
+ * The function takes in a count, sets the counter to that count, and then calls the addItem function,
+ * passing in the item and count
  */
   const onAdd = (count) =>{
     setCounter(count)
-    // console.log(`You have ${counter} ${item.name} course(s) added`);
-    addItem(item, count)
+    addItem(item, count);
   }
   return (
     <>
@@ -69,10 +69,13 @@ const ItemDetail = ({item}) => {
                     <div className="item-detail-checkout-container">
                       <span className="added-to-cart-message">Added to cart successfully! 🎉</span>
                       <Link to="/cart">
-                      <button onClick={()=>onAdd(counter)} className="item-detail-button-checkout">Checkout</button>
+                      <button className="item-detail-button-checkout">Go to Cart</button>
                       </Link> 
-                    </div> :
-                    <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
+                    </div> : 
+                    <div>
+                      <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
+                      
+                    </div>
                     }
                   </div>
               </div>
@@ -84,3 +87,4 @@ const ItemDetail = ({item}) => {
 
 
 export default ItemDetail
+
