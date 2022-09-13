@@ -4,9 +4,6 @@ export const CartContext = createContext();
 export const CartProvider = ({children}) => {
 
     const [items, setItems] = useState([])
-
-
-
 /**
  * It checks if the item is already in the cart, if it is, it adds the quantity to the existing item,
  * if it isn't, it adds the item to the cart
@@ -29,13 +26,10 @@ export const CartProvider = ({children}) => {
         }
     }
 
-
-
-
     function removeItem(itemId)  {
         setTimeout(() =>{
             setItems(items.filter((e) => e.id != itemId))
-        }, 200)
+        }, 100)
     }
     function clear(){
         setItems([])
@@ -43,23 +37,19 @@ export const CartProvider = ({children}) => {
     const isInCart = (itemId) => {
         return items.find((e) => e.id == itemId)
     }
-
-    const totalCart = () => {
-        const total = items.reduce((acc, item) => (acc += (item.quantity * item.price.toFixed(2))),0)
-        console.log(total);
-        return (total)
-    } 
-    const taxes = () => {
-        const total = items.reduce((acc, item) => (acc += (item.quantity * item.price.toFixed(2))),0)
-        const tax = total - total/1.19 ;
-        return tax
-    }
+    const total = items.reduce((acc, item) => (acc += (item.quantity * item.price.toFixed(2))),0)
 
     const beforeTaxes = () => {
-        const total = items.reduce((acc, item) => (acc += (item.quantity * item.price.toFixed(2))),0)
         const beforeTax = total/1.19 ;
         return beforeTax
     }
+    const taxes = () => {
+        const tax = total - total/1.19 ;
+        return tax
+    }
+    const totalCart = () => {
+        return total
+    } 
 
   return (
 

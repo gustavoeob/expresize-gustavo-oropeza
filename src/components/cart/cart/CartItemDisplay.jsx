@@ -3,6 +3,7 @@ import './Cart.css'
 import remove from "../../assets/icons/minus.png";
 import { CartContext } from '../../../context/CartContext'
 import CartSummary from './CartSummary';
+import { Link } from 'react-router-dom';
 
 const CartItemDisplay = () => {
 
@@ -15,10 +16,10 @@ const CartItemDisplay = () => {
                 <div className="cart-detail-container">
                     <div className="cart-items-container">
                         <div className="cart-detail-top">
-                        <p className="language-title titles">Courses</p>
-                        <p className="price-title titles">Price</p>
-                        <p className="quantity-title titles">Quantity</p>
-                        <p className="subtotal-title titles">Subtotal</p>
+                            <p className="language-title titles">Courses</p>
+                            <p className="price-title titles">Price</p>
+                            <p className="quantity-title titles">Quantity</p>
+                            <p className="subtotal-title titles">Subtotal</p>
                         </div>
                         {items.map((item) => (
                         <Fragment key={item.id}>
@@ -26,7 +27,7 @@ const CartItemDisplay = () => {
                                 <div className="cart-item-image-container">
                                     <img className="cart-item-image" src={item.flagIcon} alt="" />
                                 </div>
-                                <p className="cart-item-name"><span className="selected-cart-item-name"> {item.name}</span></p>
+                                <p className="cart-item-name"><span className="selected-cart-item-name"> <Link to={`/course/${item.id}`}  className="selected-cart-item-name-link">{item.name}</Link></span></p>
                                 <p className="cart-item-price">${item.price}</p>
                                 <p className="cart-item-quantity"> {item.quantity}</p>
                                 <button key={item.id}

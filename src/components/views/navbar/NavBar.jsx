@@ -14,24 +14,24 @@ function NavBar() {
     <Navbar className="navbar-container" fixed="top" expand="lg">
       <Container>
         <Link to="/">
-        <Navbar.Brand href="/"><img id='navbar-logo' alt="text logo" src={logo} /></Navbar.Brand>
+        <Navbar.Brand to="/"><img id='navbar-logo' alt="text logo" src={logo} /></Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-white">
-            <Nav.Link href="#our-mission">Our Mission</Nav.Link>
+            <Nav.Link to="/">Our Mission</Nav.Link>
             <NavDropdown title="Courses" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Spanish</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">French</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1" className="all-lang-btn">All Languages</NavDropdown.Item>
+              <NavDropdown.Item>English</NavDropdown.Item>
+              <NavDropdown.Item >Spanish</NavDropdown.Item>
+              <NavDropdown.Item >French</NavDropdown.Item>
+              <NavDropdown.Item className="all-lang-btn">All Languages</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item>
                 Pricing
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#for-business">For Business</Nav.Link>
-            <Nav.Link href="#blog">Blog</Nav.Link>
+            <Nav.Link>For Business</Nav.Link>
+            <Nav.Link>Blog</Nav.Link>
           </Nav>
           <div className="navbar-left-icons">
             <CartWidget className="cart-widget"/>

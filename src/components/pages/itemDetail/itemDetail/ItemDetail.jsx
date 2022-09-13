@@ -11,13 +11,10 @@ import { CartContext } from '../../../../context/CartContext'
 // This function displays an the single selected item detail
 const ItemDetail = ({item}) => {
   const {addItem} = useContext(CartContext);
-  const [counter, setCounter] = useState(0);
-
-
-/**
- * The function takes in a count, sets the counter to that count, and then calls the addItem function,
- * passing in the item and count
- */
+  const [counter, setCounter] = useState(0);  
+/* The function takes in a count, sets the counter to that count, and then calls the addItem function,
+   passing in the item and count*/
+ 
   const onAdd = (count) =>{
     setCounter(count)
     addItem(item, count);
@@ -38,19 +35,19 @@ const ItemDetail = ({item}) => {
               <div className="left-side-detail-container">
                 <div className="each-img-detail-container">
                   {/* 1:1 aspect */}
-                  <img className="card-item-img-detail img-detail-four" src={item.img[0]} alt={item.name} />
+                  <img className="card-item-img-detail img-detail-four" src={item.imgCol[0]} alt={item.name} />
                 </div>
                 <div className="each-img-detail-container">
                   {/* 4:3 aspect */}
-                  <img className="card-item-img-detail img-detail-one" src={item.img[1]} alt={item.name} />
+                  <img className="card-item-img-detail img-detail-one" src={item.imgCol[1]} alt={item.name} />
                 </div>
                 <div className="each-img-detail-container">
                   {/* 4:3 aspect */}
-                  <img className="card-item-img-detail img-detail-two" src={item.img[2]} alt={item.name} />
+                  <img className="card-item-img-detail img-detail-two" src={item.imgCol[2]} alt={item.name} />
                 </div>
                 <div className="each-img-detail-container">
                   {/* 1:1 aspect */}
-                  <img className="card-item-img-detail img-detail-three" src={item.img[3]} alt={item.name} />
+                  <img className="card-item-img-detail img-detail-three" src={item.imgCol[3]} alt={item.name} />
                 </div>
               </div>
               <div className="right-side-detail-container">
