@@ -4,6 +4,7 @@ import Home from '../views/home/Home'
 import ItemDetailContainer from '../pages/itemDetail/itemDetailContainer/ItemDetailContainer'
 import Footer from '../views/footer/Footer'
 import {BrowserRouter, Route, Routes as Routing} from 'react-router-dom'
+import Cart from '../cart/Cart'
 
 
 const Routes = () => {
@@ -19,6 +20,7 @@ const Routes = () => {
                     <Routing>
                         <Route path="/" element={<Home />} />
                         <Route path='/course/:id' element={<ItemDetailContainer/>}/>
+                        <Route path='/cart' element={<Cart/>} />
                     </Routing>
 
                     <Footer/>
