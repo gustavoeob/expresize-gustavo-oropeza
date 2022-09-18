@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import "./Footer.css"
 
 const Footer = () => {
@@ -30,21 +31,19 @@ const Footer = () => {
                 <div className="third-footer-container">
                     <ul className="social-icons">
                         <div className="social-first-row">
-                            <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                            <li><Link to="/"><i className="fa fa-instagram"></i></Link></li>
                         </div>
                         <div className="social-second-row">
-                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                            <li><Link to="/"><i className="fa fa-twitter"></i></Link></li>
                         </div>
                         <div className="social-third-row">
-                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                            <li><Link to="/"><i className="fa fa-linkedin"></i></Link></li>
                         </div>
                         <div className="social-fourth-row">
-                            <li><a href="#"><i className="fa fa-codepen"></i></a></li>
+                            <li><Link to="/"><i className="fa fa-codepen"></i></Link></li>
                         </div>
                     </ul>
                 </div>
-
-                {/* Agregar un boton de enviar y hacer el evento con enter para el formulario */}
             </footer>
         </>
   )

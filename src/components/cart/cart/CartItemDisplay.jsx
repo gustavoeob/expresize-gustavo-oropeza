@@ -12,7 +12,8 @@ const CartItemDisplay = () => {
   return (
         <>
             <div className="cart-container">
-                <h2 className="cart-title">Here are the items you have chosen</h2>
+                <h2 className="cart-title">Cart 🛒
+                 </h2>
                 <div className="cart-detail-container">
                     <div className="cart-items-container">
                         <div className="cart-detail-top">
@@ -47,8 +48,10 @@ const CartItemDisplay = () => {
                             </button>
                         </div>
                     </div>
-                    <CartSummary totalCart={totalCart}/>
-                </div>
+                    <div className="cart-summary-personal-info">
+                        <CartSummary totalCart={totalCart}/>
+                    </div>
+                    </div>
             </div>   
         </>
     )

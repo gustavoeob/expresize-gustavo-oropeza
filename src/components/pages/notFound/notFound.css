@@ -5,9 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 15vh auto;
-    margin-top:25vh;
-    gap:8rem;
+    margin: 15vh auto 5vh;
+    /* margin-top:10vh; */
+    gap:1rem;
 }
 .not-found-404{
     font-size:2.5rem;

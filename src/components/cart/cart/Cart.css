@@ -45,6 +45,8 @@
     transform: scale(1.1, 1.1);
     color: #fff;
 }
+/* Cart items */
+
 .cart-container{
     margin: 0 auto;
     min-height: 90vh;
@@ -53,15 +55,14 @@
     flex-direction: column;
 }
 .cart-title{
-    margin: 120px auto 60px;
-    font-size: 1.8rem;
+    margin: 140px auto 30px;
+    font-size: 2.5rem;
 }
 .cart-detail-container{
     display: flex;
     justify-content:center;
     flex-wrap:wrap;
-    /* gap: 1rem; */
-    margin: 0 2rem;
+    margin: 0 2rem 3rem;
 }
 .cart-items-container{
     background-color: #eaeaea;
@@ -211,24 +212,30 @@
     margin: .75rem 1rem ;
     text-decoration: none;
 }
+.cart-summary-personal-info{
+    width: 100%;
+    display: flex;
+    
+}
 .summary-container{
     background-color: #eaeaea;
     border-radius: 12px;
     height: 380px;
     max-width: 600px;
     width: 400px;
-    margin: 20px auto;
     padding: 15px 50px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     overflow: hidden;
+    text-align: start;
+    margin: 0 auto;
 }
 .summary-title{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     padding-bottom:5px;
-    border-bottom: .1px solid black;
+    border-bottom: .1px solid darkgray;
 }
 .summary-message>p{
     width: 100%;
@@ -236,17 +243,31 @@
     color: #6a6a6a7a;
     text-align: start;
 }
-.total, .taxes{
+.total-quantity-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.total, .taxes, .total-quantity-container{
     display: flex;
     justify-content:space-between;
     font-weight:500;
+    border-bottom: 1px solid lightgrey;
+    margin: 1rem auto;
+}
+.total{
+    border: none;
+}
+.total-price-cart{
+    color: #db5f00;
+    font-size: 20px;
 }
 .pay-now, .pay-now-btn{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 10px auto;
 }
-.pay-now{
+.pay-now, .submit-btn{
     display: flex;
     justify-content:center;
     border-radius: 4px;
@@ -272,4 +293,64 @@
 .tax-percentage{
     font-size:.8rem;
     color: gray;
+}
+.form-details-container{
+    margin: 0 auto;
+}
+.checkout-form-container{
+    background-color: #eaeaea;
+    padding: 15px 50px;
+    width: 400px;
+    height: 380px;
+    border-radius:12px;
+}
+.input-checkout-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-align: start;
+    border-bottom: .1px solid darkgray;
+    margin-left: 8px;
+}
+.form-fill-message{
+    width: 280px;
+    font-size:.8rem;
+    color: #6a6a6a7a;
+    text-align: start;
+    margin: 5px auto;
+}
+.cart-details-container{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:12px auto;
+    gap: 20px;
+}
+.pay-now-button{
+    margin: 10px auto;
+}
+
+.form-detail-field {
+    width: 280px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 5px;;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+.form-detail-field:focus{
+    scale:1.05;
+    transition: all 0.3s ease;
+}
+.cart-total-purchase-button{
+    margin-top: 5px;
+}
+.total-price-form{
+    margin: 0px !important;
+    font-weight: 500;
+}
+.purchase-link-redirect{
+    text-decoration: none !important;
 }

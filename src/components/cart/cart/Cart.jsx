@@ -14,7 +14,7 @@
     
     setTimeout(() => {
       setLoading(false);
-    },500)
+    },800)
     
   }, [])
   
@@ -34,7 +34,9 @@
             </Link>
           </div>
          : 
-          <CartItemDisplay/>
+         <div>
+            <CartItemDisplay/> 
+         </div>
         }
     </>
     )

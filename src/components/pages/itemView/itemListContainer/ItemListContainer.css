@@ -13,9 +13,8 @@ html{
 .courses-title{
   color: #db5f00;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.8rem;
   display: flex;
   justify-content: flex-start;
-  /* margin: -4rem 0 2rem 5rem; */
   margin: 2.5rem auto;
 }

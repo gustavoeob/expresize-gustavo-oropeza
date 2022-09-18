@@ -14,7 +14,6 @@ const Routes = () => {
   return (
         <>
 
-
             <div className="App">
                 <CartProvider>
                     <BrowserRouter>
