@@ -6,7 +6,6 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 const ItemCount = ({stock, initial, onAdd}) => {
 
 const [counter, setCounter] = useState(initial)
-const [count, setCount] = useState(counter)
 
 const decrement = () => {
     if (counter > 0){

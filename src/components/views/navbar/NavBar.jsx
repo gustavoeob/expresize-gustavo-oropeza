@@ -21,17 +21,16 @@ function NavBar() {
           <Nav className="me-auto text-white">
             <Nav.Link to="/">Our Mission</Nav.Link>
             <NavDropdown title="Courses" id="basic-nav-dropdown">
-              <NavDropdown.Item>English</NavDropdown.Item>
-              <NavDropdown.Item >Spanish</NavDropdown.Item>
-              <NavDropdown.Item >French</NavDropdown.Item>
-              <NavDropdown.Item className="all-lang-btn">All Languages</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item>
+              <Link to="/" className="lang-link" >English</Link>
+              <Link to="/" className="lang-link" >Spanish</Link>
+              <Link to="/" className="lang-link" >French</Link>
+              <Link to="/" className="lang-link all-lang-btn">All Languages</Link>
+              <Link to="/" className="lang-link">
                 Pricing
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link>For Business</Nav.Link>
-            <Nav.Link>Blog</Nav.Link>
+            <Link to="/" className="navbar-link">For Business</Link>
+            <Link to="/" className="navbar-link">Blog</Link>
           </Nav>
           <div className="navbar-left-icons">
             <CartWidget className="cart-widget"/>
