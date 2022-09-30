@@ -18,4 +18,5 @@ This project was build as part of a final project for coderhouse.
 
 ### There's a GIF to give you an idea of how to navigate through the app.
 
+## Link to https://expresize.vercel.app
 
