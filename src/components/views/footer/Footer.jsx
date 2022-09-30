@@ -7,21 +7,18 @@ const Footer = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        setEmailInput(e.target.value)
-        console.log(emailInput)
-        
+        setEmailInput('')
     }
-
 
   return (
         <>
             <footer className="footer-container">
                 <div className="first-footer-container">
 
-                <form className="subscribe-container" type="submit" onSubmit={handleSubmit}> 
+                <form className="subscribe-container" onSubmit={handleSubmit}> 
                     <p className="subscribe-text">Subscribe to Newsletter </p>
-                    <input className="subscribe-input" type="email" placeholder="example@email.com" onClick={handleSubmit}/>
-                    <button className="subscribe-send-button">✉️</button>
+                    <input className="subscribe-input" type="email" placeholder="example@email.com" onChange={e => setEmailInput(e.target.value)} value={emailInput} />
+                    <button className="subscribe-send-button" type='submit'>✉️</button>
                 </form>
                 </div>
                 <div className="second-footer-container">

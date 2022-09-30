@@ -221,3 +221,24 @@
     border: 1px solid #f0a164;
     padding: .5rem 1rem
 }
+@media (max-width: 768px) {
+    .detail-routes-container{
+        scale: .9;
+        margin:-15px auto 15px;
+        width: 400px;
+    }
+    .card-item-img-detail{
+        scale: .9;
+    }
+    .left-side-detail-container{
+    scale: .9;
+    margin: -50px auto;
+    }
+    .right-side-detail-container{
+        scale: 1;
+        margin: -20px auto;
+    }
+    .flag-icon{
+        margin-right:25px;
+    }
+}

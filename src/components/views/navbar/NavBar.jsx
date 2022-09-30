@@ -19,22 +19,24 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-white">
-            <Nav.Link to="/">Our Mission</Nav.Link>
+            <Link to="/our-mission" className="navbar-link">
+           Our mission
+            </Link>
             <NavDropdown title="Courses" id="basic-nav-dropdown">
-              <Link to="/" className="lang-link" >English</Link>
-              <Link to="/" className="lang-link" >Spanish</Link>
-              <Link to="/" className="lang-link" >French</Link>
-              <Link to="/" className="lang-link all-lang-btn">All Languages</Link>
-              <Link to="/" className="lang-link">
+              <Link to="/course/IJHwYBgvmD7CO58LcGNt" className="lang-link" >English</Link>
+              <Link to="/course/YQTHNSksn0gCFfBV6798" className="lang-link" >German</Link>
+              <Link to="/course/ZhevKU9pRaPoN5f04BKF" className="lang-link" >French</Link>
+              <Link to="/courses" className="lang-link all-lang-btn">All Languages</Link>
+              <Link to="/pricing" className="lang-link">
                 Pricing
               </Link>
             </NavDropdown>
-            <Link to="/" className="navbar-link">For Business</Link>
-            <Link to="/" className="navbar-link">Blog</Link>
+            <Link to="/for-business" className="navbar-link">For Business</Link>
+            <Link to="/blog" className="navbar-link">Blog</Link>
           </Nav>
           <div className="navbar-left-icons">
             <CartWidget className="cart-widget"/>
-            <Link to="/"><img className="help-icon" src={HelpIcon} alt="help icon" /></Link>
+            <Link to="/help"><img className="help-icon" src={HelpIcon} alt="help icon" /></Link>
           </div>
         </Navbar.Collapse>
       </Container>

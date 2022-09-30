@@ -1,0 +1,27 @@
+.our-mission-container{
+    min-height:92.5vh;
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+}
+
+.our-mission-title{
+    width: 85vw;
+    text-align:start;
+    margin: 150px auto 50px ;
+    color: #646464;
+}
+
+.our-mission-caption-container{
+    width: 85vw;
+    margin: 0 auto 75px;
+    color: #8d8d8d;
+    text-align: start;
+}
+.our-mission-paragraph{
+    margin: 35px auto;
+}
+.our-mission-sign-img{
+    margin: 75px auto 25px;
+    display: flex;
+}

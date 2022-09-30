@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
       <div className="item-detail-container">
         <div className="detail-routes-container">
           <Link className="detail-route-link home-link" to={'/'}> Home <span>&gt;</span></Link>
-          <Link className="detail-route-link courses-link" to={'/'}> Courses <span>&gt;</span></Link>
+          <Link className="detail-route-link courses-link" to={'/courses'}> Courses <span>&gt;</span></Link>
           <Link className="detail-route-link language-link" to={`/course/${item.id}`}> {item.name} <span>&gt;</span> </Link>
           <Link disabled className="detail-route-link checkout-link" to={'/checkout'}> Checkout <span>&gt;</span></Link>
         </div>

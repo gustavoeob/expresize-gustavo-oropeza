@@ -34,7 +34,7 @@ const ItemListContainer = () => {
   
   return (
     <div className="main-container">
-      <h4 className="courses-title">Courses 📚</h4>
+      <p className="courses-title">Courses 📚</p>
       {items.length > 0 ? 
       <ItemList items={items} /> :
       setLoading(true)} 

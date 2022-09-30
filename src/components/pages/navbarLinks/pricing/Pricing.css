@@ -1,0 +1,56 @@
+.pricing-container{
+    min-height:92.5vh;
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+}
+.pricing-plans-title{
+    width: 85vw;
+    margin: 120px auto 75px;
+    color: #646464;
+}
+.pricing-plans-title >p {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.plans-details-container{
+    width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 75px;
+    padding: 0 25px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.price-plan-container{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    width: 280px;
+    height:420px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: rgb(255,111,0);
+    background: linear-gradient(185deg, rgba(255,111,0,1) 0%, rgba(245,136,10,1) 29%, rgba(250,150,5,1) 59%, rgb(220, 91, 48) 100%);
+    filter: brightness(.95);
+    transition: all .4s ease;
+}
+.price-plan-container:hover{
+    top: -30px;
+    filter: brightness(1);
+
+}
+.price-plan-title{
+    margin: 20px auto 0;
+}
+.price-plan-includes{
+    text-align: start;
+    margin: 0 auto;
+}
+.price-plan-amount{
+    font-weight: 500;
+    font-size: 1.2rem;
+}

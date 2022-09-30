@@ -48,7 +48,7 @@ const CartSummary = () => {
         </div>
         <div className="form-details-container">
             {
-          <Form total={totalCart(items)} order={items} /> //&& <p>Orden generada </p>
+          <Form total={totalCart(items)} order={items} /> 
           }
         </div>
       </div>

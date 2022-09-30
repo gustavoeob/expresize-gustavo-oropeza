@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import db from "../index";
+import Swal from "sweetalert2";
 
 export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
@@ -24,32 +25,29 @@ export const CartProvider = ({ children }) => {
     }
   }
 
-/**
- * It removes an item from the list after 100ms.
- */
+  /**
+   * It removes an item from the list after 100ms.
+   */
   function removeItem(itemId) {
     setTimeout(() => {
       setItems(items.filter((e) => e.id !== itemId));
     }, 100);
   }
-/**
- * It clears the items array.
- */
+  /**
+   * It clears the items array.
+   */
   function clear() {
     setItems([]);
   }
-/**
- * If the itemId is found in the items array, return true, otherwise return false.
- * @returns The function isInCart is returning a boolean value.
- */
+  /**
+   * If the itemId is found in the items array, return true, otherwise return false.
+   * returns The function isInCart is returning a boolean value.
+   */
   const isInCart = (itemId) => {
     return items.find((e) => e.id === itemId);
   };
 
-  const totalQuantity = items.reduce(
-    (acc, item) => (acc += item.quantity),
-    0
-  );
+  const totalQuantity = items.reduce((acc, item) => (acc += item.quantity), 0);
   /* Calculating the total of the cart. */
 
   const total = items.reduce(
@@ -69,15 +67,25 @@ export const CartProvider = ({ children }) => {
     return total;
   };
 
-
-/**
- * It creates a new order in the database
- */
+  /**
+   * It creates a new order in the database
+   */
   const createOrder = async ({ data }) => {
     try {
       const col = collection(db, "orders");
       const order = await addDoc(col, data);
-      alert(`Your order ID is: ${order.id}`)
+      Swal.fire({
+        title: `Order created`,
+        html: `A receipt has been sent to your email. <br> <br> ID: ${order.id}`,
+        icon: "success",
+        width: 600,
+        padding: "3em",
+        color: "#db5f00",
+        background: "#fff",
+        confirmButtonColor: "#db5f00",
+        backdrop: `url("https://acegif.com/wp-content/uploads/gif/confetti-8.gif") repeat`
+      });
+
     } catch (error) {
       return error;
     }
@@ -95,7 +103,9 @@ export const CartProvider = ({ children }) => {
         beforeTaxes,
         items,
         totalQuantity,
-        createOrder}}>
+        createOrder
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

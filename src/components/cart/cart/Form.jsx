@@ -25,8 +25,9 @@ const Input = ({
   );
 };
 
+
 const Form = ({ total, order }) => {
-  const { clear, createOrder} = useContext(CartContext);
+  const {clear, createOrder} = useContext(CartContext);
   const timeElapsed = Date.now();
   const date = new Date(timeElapsed);
   
@@ -45,7 +46,9 @@ const Form = ({ total, order }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     createOrder({ data: form });
-    clear();
+    setTimeout(() => {
+      clear();
+    },2000)
   };
 
   const handleChange = (e) => {
@@ -59,8 +62,10 @@ const Form = ({ total, order }) => {
     });
   };
 
+
   return (
-    <form onSubmit={onSubmit} className="checkout-form-container">
+    
+    <form onSubmit={onSubmit} className="checkout-form-container" autoComplete="off">
       <div>
         <p className="input-checkout-title">Personal Info</p>
         <p className="form-fill-message">All fields marked * are required to generate your order</p>
@@ -80,10 +85,9 @@ const Form = ({ total, order }) => {
       ))}
       
       <div className="cart-total-purchase-button">
-            <button className="pay-now pay-now-button" type="submit">
-                Purchase 
-            </button>
+            <button className="pay-now pay-now-button" type="submit"> Purchase </button>
       </div>
+
     </form>
   );
 };

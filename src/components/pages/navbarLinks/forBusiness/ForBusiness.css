@@ -1,0 +1,97 @@
+.for-business-container{
+    min-height:92.5vh;
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+}
+.alternative-navbar{
+    top: 40px;
+    position: sticky;
+    background-color: #fff;
+    width: 100%;
+    padding: 100px 0 65px;
+    margin: 0 auto;
+}
+.for-business-title-container{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.for-business-logo{
+    width:172px;
+}
+
+.for-business-title{
+    color: #646464;
+    font-size: 1.3rem;
+    border-left: 1px solid #646464;
+    padding: 0 12px;
+    margin: auto 0;
+}
+.for-business-description-container{
+    width: 85vw;
+    margin: 120px auto 0px;
+    text-align: start;
+    color: #646464;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.for-business-description{
+    width: 300px;
+    margin: 0px auto 0;
+    
+}
+.price-description-for-business-container{
+    color: #646464;
+    font-size: 1.1rem;
+    margin: 50px auto 75px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.price-description-for-business-container > *{
+    min-width: 292px;
+    text-align: start;
+
+}
+.for-business-contact-container{
+    width: 85vw;
+    margin: 0 auto 50px;
+    color: #646464;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.whatsapp-for-business-icon{
+    width:25px;
+}
+.whatsapp-contact-container{
+    display: flex;
+    margin: 0 auto;
+    width: 350px;
+    justify-content:center;
+}
+.whatsapp-contact-container > *{
+    padding: 12px 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.email-business-container{
+    display: flex;
+    margin: 0 auto;
+    width: 350px;
+    justify-content:flex-end;
+
+}
+.email-business-container > *{
+    padding: 12px 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #db5f00;
+}
