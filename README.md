@@ -17,6 +17,11 @@ This project was build as part of a final project for coderhouse.
 • Button animation from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1
 
 ### There's a GIF to give you an idea of how to navigate through the app.
-<img src="https://firebasestorage.googleapis.com/v0/b/expresize.appspot.com/o/expresize-navigation.gif?alt=media&token=5cc0418e-6f55-44c3-8fc4-8ce06ae190b5" />
+
+
+![expresize-navigation](https://user-images.githubusercontent.com/84198544/193370368-3baec256-59b3-4e25-ada8-7d1a569bcd7f.gif)
+
+Feel free to collaborate or contact me through email or whatsapp in the for business section in the app ⬇️
+
 ## Link to https://expresize.vercel.app
 
