@@ -229,7 +229,7 @@
     justify-content:space-between;
     overflow: hidden;
     text-align: start;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .summary-title{
     font-size: 1.5rem;
@@ -303,6 +303,7 @@
     width: 400px;
     height: 380px;
     border-radius:12px;
+    margin: 20px auto;
 }
 .input-checkout-title{
     font-size: 1.5rem;
@@ -403,6 +404,7 @@
     }
     .summary-container, .checkout-form-container{
         width: 320px;
+        margin: 20px auto;
         height: auto
     }
     .form-detail-field{
