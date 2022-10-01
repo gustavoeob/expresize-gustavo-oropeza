@@ -22,7 +22,10 @@
     color: #fff;
     font-size: .85rem;
     margin: 0 auto;
-
+}
+.profile-link-redirect{
+    text-decoration: none;
+    color: #fff;
 }
 .subscribe-text{
     justify-content: flex-start;

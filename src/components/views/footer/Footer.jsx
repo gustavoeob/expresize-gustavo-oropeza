@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="second-footer-container">
 
-                <p className="footer-sign">Made with love by Gustavo Oropeza <span className="sign-heart" >&hearts;</span></p>
+                <p className="footer-sign">Made with love by <a className="profile-link-redirect" href="https://github.com/gustavoeob">Gustavo Oropeza</a>  <span className="sign-heart" >&hearts;</span></p>
                 </div>
                 <div className="third-footer-container">
                     <ul className="social-icons">
